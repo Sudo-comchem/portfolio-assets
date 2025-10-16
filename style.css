@@ -1,5 +1,11 @@
 /* Import Google Font */
-@import url('https://font-public.canva.com/YAFDq4x0yjg/0/Monkey-Regular.456ccd959d7a1275ecaeab53e.f519b3ce38b444d9717ba52d2ad07d53.woff2');
+
+@font-face {
+  font-family: 'Monkey';
+  src: url('portfolio-assets/assets/Monkey-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
     --yellow-bg: #FFE765;
@@ -10,7 +16,7 @@
 }
 
 body {
-    font-family: 'Monkey-Regular';
+    font-family: 'Monkey';
     margin: 0;
     background-color: var(--yellow-bg);
     color: var(--black-text);
