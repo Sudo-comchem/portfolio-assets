@@ -1,8 +1,8 @@
-/* Import Google Font */
+
 
 @font-face {
   font-family: 'Monkey';
-  src: url('./assets/Monkey-Regular.woff2') format('woff2');
+  src: url('./assets/Monkey-Regular.456ccd959d7a1275ecaeab53e.f519b3ce38b444d9717ba52d2ad07d53\ \(1\).woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -115,13 +115,13 @@ h1 {
 
 
 .profile-card p {
-    font-size: 1em;
+    font-size: 1.2em;
     max-width: 600px;
     margin: 0 auto 40px;
     line-height: 1.5;
     position: relative;
     left: 65px;
-    bottom: 40px;
+    bottom: 30px;
 }
 
 .navigation-bubbles {
@@ -144,7 +144,7 @@ h1 {
     padding: 15px 25px;
     border-radius: 50px;
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 1em;
     white-space: nowrap;
     transition: transform 0.2s, box-shadow 0.2s;
     line-height: 1.2;
@@ -163,6 +163,34 @@ h2 {
     position: relative;
     bottom: 20px;
 }
+
+/*music */
+.music-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--orange-bubble);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.music-icon::before {
+  content: '🔊'; /* Music ON icon */
+  font-size: 24px;
+}
+
+.music-icon.paused::before {
+  content: '🔇'; /* Music OFF icon */
+}
+
+.music-icon:hover {
+  transform: scale(1.1);
+}
+
 
 /* Gallery Layout */
 .gallery {
@@ -258,8 +286,10 @@ h2 {
 }
 
 .small-bubbles .nav-bubble {
-    font-size: 0.7em;
+    font-size: 1em;
     padding: 10px 18px;
+    position: relative;
+    top: 100;
 }
 
 /* --- Social Links (Fixed relative to viewport) --- */
