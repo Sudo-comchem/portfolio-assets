@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Yueshuya Bao - Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
         <!-- Your custom font: Make sure this URL is correct and accessible -->
     </head>
     <body>
@@ -35,12 +36,12 @@
             <section id="digital-art-section" class="section-page portfolio-section">
                 <h2>Digital Arts</h2>
                 <div class="gallery">
-                    <div class="gallery-item large"></div>
-                    <div class="gallery-item large"></div>
-                    <div class="gallery-item medium"></div>
-                    <div class="gallery-item wide"></div>
-                    <div class="gallery-item small"></div>
-                    <div class="gallery-item small"></div>
+                    <div class="gallery-item wide art1"></div>
+                    <div class="gallery-item large art2"></div>
+                    <div class="gallery-item large art3"></div>
+                    <div class="gallery-item large art4"></div>
+                    <div class="gallery-item large art5"></div>
+                    <div class="gallery-item large art6"></div>
                 </div>
                 <a href="#header-section" class="home-button" aria-label="Go to top"></a>
             </section>
@@ -49,21 +50,21 @@
                 <h2>Game Development</h2>
                 <div class="game-cards">
                     <div class="game-card">
-                        <div class="game-image"></div>
+                        <div class="game-image pic1"></div>
                         <h3>Golden Cutesie Project</h3>
                         <p>Game engine: Unity</p>
                         <p>Language: C#</p>
                         <p>Still on development</p>
                     </div>
                 <a href="https://www.roblox.com/games/110688560865570/Hagdang-Bato-Derby" class="game-card">
-                    <div class="game-image"></div>
+                    <div class="game-image pic2"></div>
                     <h3>Hagdang Bato Racecourse</h3>
                     <p>Game engine: Roblox Studio</p>
                     <p>Language: LUA</p>
                 </a>
 
                     <div class="game-card">
-                        <div class="game-image"></div>
+                        <div class="game-image pic3"></div>
                         <h3>While I'm gone, We're still here</h3>
                         <p>Game engine: Unity</p>
                         <p>Language: C#</p>
@@ -75,14 +76,14 @@
 
             <section id="threed-modeling-section" class="section-page portfolio-section">
                 <h2>3D Modeling</h2>
-                <div class="gallery">
-                    <div class="gallery-item large"></div>
-                    <div class="gallery-item large"></div>
-                    <div class="gallery-item medium"></div>
-                    <div class="gallery-item wide"></div>
-                    <div class="gallery-item small"></div>
-                    <div class="gallery-item small"></div>
-                </div>
+                    <model-viewer 
+                        src="3d/building for golden.glb" 
+                        alt="A 3D model of my work"
+                        auto-rotate
+                        camera-controls
+                        shadow-intensity="1"
+                        style="width: 600px; height: 400px; border-radius: 15px; background-color: #f0f0f0;">
+                    </model-viewer>
                 <a href="#header-section" class="home-button" aria-label="Go to top"></a>
             </section>
 

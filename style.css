@@ -82,10 +82,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('https://via.placeholder.com/60x60/FF9B42/000000?text='); /* Replace with your actual pixel art */
+    background-image: url(pictures/bao\ bao.gif); /* Replace with your actual pixel art */
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 60px;
+    background-size: 200px;
 }
 
 .profile-image-small {
@@ -97,10 +97,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('https://via.placeholder.com/30x30/FF9B42/000000?text=');
+    background-image: url(pictures/bao\ bao.gif);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 60px;
+    background-size: 200px;
 }
 
 h1 {
@@ -158,10 +158,11 @@ h1 {
 /* --- Portfolio Sections (Pages 2, 3, 4, 5) Content Styling --- */
 h2 {
     font-size: 2.5em;
-    margin-bottom: 50px;
+    z-index: 10;
+    margin-top: 150px;
     text-align: center;
     position: relative;
-    bottom: 20px;
+    top: 830px;
 }
 
 /*music */
@@ -214,13 +215,60 @@ h2 {
     background-size: 60px;
 }
 
-.gallery-item.large { height: 250px; }
-.gallery-item.medium { height: 200px; }
-.gallery-item.small { height: 150px; }
-.gallery-item.wide { grid-column: span 2; height: 180px; }
+.art1 { background-image: url('Digital-art/480800991_4053321134945406_8828304958873311208_n.jpg');
+position: relative;
+margin-top: 800px;
+background-size: 585px;
+
+}
+.art2 { background-image: url('Digital-art/472983865_1127266205504828_2524686467264151072_n.jpg');
+background-size: 349px;
+width: 350px;
+}
+.art3 { background-image: url('Digital-art/484386100_4069537929990393_3588287207371138589_n.jpg');
+background-size: 349px;
+width: 350px;
+}
+.art4 { background-image: url('Digital-art/486243783_4080965142181005_7356741662303778644_n.jpg');
+background-size: 349px;
+width: 350px;
+ }
+.art5 { background-image: url('Digital-art/486496075_4080965072181012_1464997013652626121_n.jpg');
+background-size: 349px;
+width: 350px;
+}
+.art6 { background-image: url('Digital-art/eq.png');
+background-size: 380px;
+width: 350px;
+
+}
+
+.gallery-item.large { 
+    height: 500px; 
+    position: relative;
+    top: px;
+}
+.gallery-item.wide { 
+    grid-column: span 3;
+    width: 586px; 
+    height: 400px; 
+    position: relative;
+    left: 300px;
+
+}
 
 
 /* Game Cards Layout */
+
+#game-development-section h2 {
+  font-size: 2.5em;
+  text-align: center;
+  color: #222;
+  position: relative;
+  top: 0px;
+  margin-bottom: 200px;
+  z-index: 10;
+}
 .game-cards {
     display: flex;
     flex-wrap: wrap;
@@ -229,7 +277,7 @@ h2 {
     width: 100%;
     max-width: 1200px;
     position: relative;
-    bottom: 50px;
+    bottom: 150px;
 }
 
 .game-card {
@@ -267,9 +315,20 @@ h2 {
     background-size: 60px;
 }
 
+.pic1{ background-image: url(pictures/dsa.png);
+background-size: 280px;
+}
+.pic2{ background-image: url(pictures/HAGDANG\ \(2\).png);
+background-size: 290px;
+}
+.pic3{ background-image: url(pictures/1.png);
+background-size: 290px;
+}
+
+
 .game-card h3 {
     font-size: 1.2em;
-    margin-top: 0;
+    margin-top: 0px;
     margin-bottom: 10px;
 }
 
@@ -278,7 +337,36 @@ h2 {
     margin: 5px 0;
 }
 
+/*3d section */
+#threed-modeling-section h2{
+    font-size: 2.5em;
+  text-align: center;
+  color: #222;
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  z-index: 10;
+}
+#threed-modeling-section model-viewer {
+  margin-top: 0;
+  position: relative;
+  bottom: 70px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
 /* Web Programming Section Styling */
+#web-development-section h2 {
+        font-size: 2.5em;
+  text-align: center;
+  color: #222;
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  z-index: 10;
+}
 .web-intro {
     text-align: center;
     max-width: 800px;
@@ -291,6 +379,7 @@ h2 {
     position: relative;
     top: 100;
 }
+
 
 /* --- Social Links (Fixed relative to viewport) --- */
 .social-links {
